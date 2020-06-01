@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="group-border">
+
+                    <ul class="img">
+                        <li *ngFor="let profile of arrProfile" (click)="userDetails(profile.intPk)">
+                            <img width="100px" src={{profile.url}}>
+                            <p>{{profile.strName}}</p>
+                        </li>
+                   
+                    </ul>
+
+                  
+                </div>
+                <div class="posts">
+                <ul class="user-details">
+                    <li *ngFor="let profile of arrProfile" >
+                        <div *ngIf="profile.intPk === intCurrentUserPk" >
+                            <div class="post-one" *ngFor="let posts of profile.arrUserPosts"  >
+
+                                <h3>{{posts.strTitle}}</h3>
+                                <img width="100px" src={{posts.strImageUrl}}>
+                                <p>{{posts.strDescription}}</p>
+                            </div>
+                        </div>
+                    </li>
+               
+                </ul>
+                </div>
+            </div>
+            <div class="col-md-5">
+                right side work
+            </div>
+        </div>
+    </div>
+</div>

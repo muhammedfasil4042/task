@@ -1,1 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.search-parent{
+    margin-left: 150px;
+    .form-control{
+        width: 300px;
+    }
+}
+.group-border{
+   border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    overflow-y: scroll;
+    padding: 5px;
+}
+.posts{
+    
+    .post-one{
+        border: 1px solid #dbdbdb;
+        border-radius: 5px;
+        margin-top: 25px; 
+        padding: 15px;
+        img{
+            width: 100%;
+        }
+    }
+    ul{
+        padding: unset;
+    }
+    
+}
+.navbar{
+    padding: 15px 0px;
+}
+ul {
+    list-style-type: none;
+  }
+.img{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    cursor: pointer;
+    p{
+        margin: unset;
+        color: rgba(var(--i1d,38,38,38),1);
+        font-size: 12px;
+    }
+}
+.img li{
+    padding: 5px;
+    img{
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
